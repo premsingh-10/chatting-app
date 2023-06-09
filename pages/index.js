@@ -3,7 +3,7 @@ import { useAuth } from '@/context/authContext';
 import {useRouter} from 'next/router';
 
 
-const index = () => {
+const Home = () => {
   const {signOut,currentUser,isLoading} = useAuth();
   const router = useRouter();
 
@@ -19,4 +19,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Home
